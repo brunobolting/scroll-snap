@@ -1,22 +1,18 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.container {
-  display: flex;
-  overflow: auto;
-  flex: none;
-  flex-flow: column nowrap;
+.scroll-snap-y {
   scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
-section {
+.container > section {
   scroll-snap-align: center;
-  background-size: cover;
-  background-position: center center;
   height: 100vh;
-  flex: none;
 }
 
 .one {
