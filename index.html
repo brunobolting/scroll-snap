@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Scroll Snap - Vertical</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+    }
+
+    .scroll-snap-y {
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+      height: 100vh;
+    }
+
+    .container > section {
+      scroll-snap-align: center;
+      height: 100vh;
+    }
+
+    .one {
+      background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    }
+    .two {
+      background-image: linear-gradient(to right bottom, #126aee, #5159df, #6e47ce, #8230ba, #9004a4);
+    }
+    .three {
+      background-image: linear-gradient(to bottom, #4bee12, #98bd00, #b38900, #b55500, #a41904);
+    }
+    .four {
+      background-image: radial-gradient(circle, #12eea1, #00cbc5, #00a4d8, #0079ce, #044aa4);
+    }
+    .five {
+      background-image: linear-gradient(to left top, #e4ee12, #aedf31, #7ccd45, #4bb954, #04a45e);
+    }
+  </style>
+
+  <body>
+    <div class="container scroll-snap-y">
+      <section class="one"></section>
+      <section class="two"></section>
+      <section class="three"></section>
+      <section class="four"></section>
+      <section class="five"></section>
+    </div>
+  </body>
+</html>
